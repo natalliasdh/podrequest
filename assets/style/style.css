@@ -8,6 +8,7 @@ html {
     height: 100%;
     display: flex;
     flex-direction: column;
+    background-color: #121725;
 }
 
 body {
@@ -19,6 +20,21 @@ body {
     background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media only screen and (min-width:768px) {
+    body {
+        background: url("../images/image-host-tablet.jpg") right top no-repeat, url("../images/bg-pattern-dots.svg") left bottom no-repeat;
+        background-size: unset;
+        background-blend-mode: normal;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    body {
+        background-image: url("../images/image-host-desktop.jpg");
+        background-position: right center;
+    }
 }
 
 .content {
@@ -50,7 +66,6 @@ body {
         text-align: left;
         margin-top: 50px;
         margin-bottom: 152px;
-        margin-left: 39px;
     }
 }
 
@@ -176,4 +191,52 @@ button {
 .footer a {
     text-decoration: none;
     color: #54E6AF;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width:768px) {
+    .main {
+        background-color: #121725;
+        width: 635px;
+        padding-top: 93px;
+        text-align: left;
+    }
+    h1 {
+        font-size: 48px;
+        line-height: 56px;
+        margin-bottom: 31px;
+    }
+    .content {
+        margin-left: 39px;
+    }
+    .brands {
+        width: 536px;
+    }
+    .interactive {
+        flex-direction: column-reverse;
+    }
+    p {
+        margin-bottom: 40px;
+        font-size: 18px;
+        line-height: 28px;
+        max-width: 445px;
+    }
+    button {
+        width: 162px;
+        position: absolute;
+        top: 0;
+        margin: 0;
+        right: 0;
+    }
+    form {
+        position: relative;
+        width: 427px;
+        margin-bottom: 50px;
+    }
+    .footer {
+        padding-top: 30px;
+        text-align: right;
+    }
 }
