@@ -32,8 +32,7 @@ body {
 
 @media only screen and (min-width:1200px) {
     body {
-        background-image: url("../images/image-host-desktop.jpg");
-        background-position: right center;
+        background: url("../images/bg-pattern-dots.svg") 100% 87% no-repeat, url("../images/image-host-desktop.jpg") right center no-repeat;
     }
 }
 
@@ -73,7 +72,6 @@ body {
     .logo {
         margin-top: 102px;
         margin-bottom: 103px;
-        margin-left: 165px;
     }
 }
 
@@ -178,6 +176,10 @@ button {
     max-width: 427px;
 }
 
+button:hover {
+    background-color: #B3FFE2;
+}
+
 
 /*------------------------------------------------------------------------------------------------------------------*/
 
@@ -238,5 +240,27 @@ button {
     .footer {
         padding-top: 30px;
         text-align: right;
+    }
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width:1200px) {
+    .main {
+        background-color: #121725;
+        width: 723px;
+        padding-top: 88px;
+    }
+    h1 {
+        font-size: 52px;
+        line-height: 62px;
+        margin-bottom: 24px;
+    }
+    .content {
+        margin-left: 165px;
+    }
+    form {
+        margin-bottom: 64px;
     }
 }
