@@ -15,6 +15,10 @@ body {
     background-color: #121725;
     color: #C2CBE5;
     box-sizing: border-box;
+    background-image: url("../images/image-host.jpg");
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .content {
@@ -122,4 +126,54 @@ p {
 
 .icons.pocket {
     background-image: url("../images/pocket-casts.svg");
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+.interactive {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 9px 32px;
+    box-sizing: border-box;
+    border-radius: 28px;
+    border: none;
+    line-height: 28px;
+    background-color: #2C344B;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    max-width: 427px;
+}
+
+button {
+    width: 100%;
+    margin-top: 16px;
+    height: 46px;
+    background-color: #54E6AF;
+    color: #121725;
+    border: none;
+    border-radius: 26px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    max-width: 427px;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+.footer {
+    padding: 20px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #54E6AF;
 }
